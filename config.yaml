@@ -1,0 +1,20 @@
+baseURL: "https://yoursite.example.com/"
+title: "Sagar's GSoC Blog"
+languageCode: en-us
+theme: PaperMod
+permalinks:
+  post: /:year/:month/:title/
+params:
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+menu:
+  main:
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: feed
